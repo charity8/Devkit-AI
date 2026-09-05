@@ -19,6 +19,16 @@ class Flashcard(Base):
     back = Column(String)
     created_at = Column(DateTime, default=datetime.utcnow)
 
+class Expense(Base):
+    __tablename__ = "expenses"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, index=True)
+    description = Column(String)
+    category = Column(String)
+    amount = Column(String)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
 class CodeReview(Base):
     __tablename__ = "code_reviews"
 
