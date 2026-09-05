@@ -8,7 +8,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, system-ui, sans-serif; }
 
         body {
-            background: #0a0e1a;
+            background: #0f0a1a;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,45 +33,45 @@
             top: -10px;
             width: 2px;
             height: 15px;
-            background: linear-gradient(to bottom, rgba(74, 144, 217, 0), rgba(74, 144, 217, 0.6));
+            background: linear-gradient(to bottom, rgba(139, 92, 246, 0), rgba(139, 92, 246, 0.6));
             animation: fall linear infinite;
         }
         @keyframes fall { to { transform: translateY(100vh); opacity: 0.8; } }
 
         .app {
-            background: rgba(10, 14, 26, 0.85);
-            backdrop-filter: blur(8px);
+            background: rgba(15, 10, 26, 0.88);
+            backdrop-filter: blur(10px);
             max-width: 450px;
             width: 100%;
             border-radius: 30px;
             padding: 25px;
-            box-shadow: 0 20px 60px rgba(74, 144, 217, 0.15);
-            border: 1px solid rgba(74, 144, 217, 0.15);
+            box-shadow: 0 20px 60px rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(139, 92, 246, 0.2);
             position: relative;
             z-index: 1;
             max-height: 90vh;
             overflow-y: auto;
         }
 
-        h1 { font-size: 32px; color: #4A90D9; text-align: center; margin-bottom: 5px; text-shadow: 0 0 30px rgba(74, 144, 217, 0.15); }
-        .sub { color: #6a8db5; text-align: center; margin-bottom: 25px; font-size: 16px; }
+        h1 { font-size: 32px; color: #8B5CF6; text-align: center; margin-bottom: 5px; text-shadow: 0 0 30px rgba(139, 92, 246, 0.2); }
+        .sub { color: #a78bfa; text-align: center; margin-bottom: 25px; font-size: 16px; }
         input, select {
             width: 100%;
             padding: 15px;
-            border: 1px solid #1a2a4a;
+            border: 1px solid #2d1b69;
             border-radius: 12px;
             margin-bottom: 12px;
             font-size: 16px;
-            background: rgba(20, 30, 60, 0.6);
-            color: #aac8ff;
+            background: rgba(30, 20, 60, 0.6);
+            color: #d4c4ff;
             transition: border 0.3s;
         }
-        input:focus, select:focus { outline: none; border-color: #4A90D9; box-shadow: 0 0 20px rgba(74, 144, 217, 0.1); }
-        input::placeholder { color: #4a6a8a; }
+        input:focus, select:focus { outline: none; border-color: #8B5CF6; box-shadow: 0 0 20px rgba(139, 92, 246, 0.15); }
+        input::placeholder { color: #6a4a9a; }
         button {
             width: 100%;
             padding: 16px;
-            background: #4A90D9;
+            background: #8B5CF6;
             color: white;
             border: none;
             border-radius: 12px;
@@ -79,13 +79,13 @@
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
-            box-shadow: 0 0 30px rgba(74, 144, 217, 0.15);
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.2);
             margin-top: 5px;
         }
-        button:hover { background: #5a9fe9; box-shadow: 0 0 40px rgba(74, 144, 217, 0.25); transform: scale(1.02); }
+        button:hover { background: #7c3aed; box-shadow: 0 0 40px rgba(139, 92, 246, 0.3); transform: scale(1.02); }
         button:disabled { opacity: 0.6; pointer-events: none; }
-        .btn-secondary { background: #2a3a5a; }
-        .btn-secondary:hover { background: #3a4a6a; }
+        .btn-secondary { background: #2d1b69; }
+        .btn-secondary:hover { background: #3d2b79; }
         .btn-danger { background: #E74C3C; }
         .btn-danger:hover { background: #ff5a4a; }
         .btn-green { background: #34A853; }
@@ -96,42 +96,42 @@
         .btn-purple:hover { background: #a569bd; }
         .btn-sm { font-size: 14px; padding: 10px; margin-top: 8px; }
 
-        .switch { text-align: center; margin-top: 15px; color: #4a6a8a; font-size: 14px; }
-        .switch a { color: #4A90D9; font-weight: bold; text-decoration: none; }
-        .switch a:hover { color: #6aafe9; text-decoration: underline; }
+        .switch { text-align: center; margin-top: 15px; color: #6a4a9a; font-size: 14px; }
+        .switch a { color: #8B5CF6; font-weight: bold; text-decoration: none; }
+        .switch a:hover { color: #a78bfa; text-decoration: underline; }
         .hidden { display: none; }
 
         .card {
-            background: rgba(20, 30, 60, 0.4);
+            background: rgba(30, 20, 60, 0.4);
             padding: 15px;
             border-radius: 12px;
             margin-top: 15px;
-            border: 1px solid rgba(74, 144, 217, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.15);
         }
         .card textarea {
             width: 100%;
             padding: 12px;
-            border: 1px solid #1a2a4a;
+            border: 1px solid #2d1b69;
             border-radius: 8px;
             font-size: 14px;
             min-height: 100px;
             font-family: monospace;
-            background: rgba(10, 14, 26, 0.6);
-            color: #aac8ff;
+            background: rgba(15, 10, 26, 0.6);
+            color: #d4c4ff;
         }
-        .card textarea:focus { outline: none; border-color: #4A90D9; }
-        .card textarea::placeholder { color: #4a6a8a; }
+        .card textarea:focus { outline: none; border-color: #8B5CF6; }
+        .card textarea::placeholder { color: #6a4a9a; }
         
         .result {
-            background: rgba(20, 30, 60, 0.6);
+            background: rgba(30, 20, 60, 0.6);
             padding: 15px;
             border-radius: 8px;
             margin-top: 15px;
             white-space: pre-wrap;
             word-break: break-word;
             font-size: 14px;
-            color: #aac8ff;
-            border: 1px solid rgba(74, 144, 217, 0.1);
+            color: #d4c4ff;
+            border: 1px solid rgba(139, 92, 246, 0.15);
         }
 
         .file-input-wrapper {
@@ -153,35 +153,35 @@
         .file-input-label {
             display: block;
             padding: 12px;
-            background: rgba(20, 30, 60, 0.6);
-            border: 1px dashed #4A90D9;
+            background: rgba(30, 20, 60, 0.6);
+            border: 1px dashed #8B5CF6;
             border-radius: 12px;
-            color: #6a8db5;
+            color: #a78bfa;
             text-align: center;
             font-size: 14px;
             transition: all 0.3s;
             cursor: pointer;
         }
         .file-input-label:hover {
-            border-color: #5a9fe9;
-            background: rgba(30, 50, 90, 0.6);
+            border-color: #7c3aed;
+            background: rgba(40, 30, 80, 0.6);
         }
         .file-input-label .filename {
-            color: #aac8ff;
+            color: #d4c4ff;
             font-weight: bold;
         }
 
         .history-item {
-            background: rgba(10, 14, 26, 0.5);
+            background: rgba(15, 10, 26, 0.5);
             padding: 12px;
             border-radius: 8px;
             margin-bottom: 10px;
-            border-left: 3px solid #4A90D9;
+            border-left: 3px solid #8B5CF6;
         }
-        .history-item .lang { color: #6a8db5; font-size: 12px; text-transform: uppercase; }
-        .history-item .code-snippet { color: #aac8ff; font-family: monospace; font-size: 13px; margin: 5px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .history-item .feedback-preview { color: #8ab4f8; font-size: 13px; }
-        .history-item .date { color: #4a6a8a; font-size: 11px; float: right; }
+        .history-item .lang { color: #a78bfa; font-size: 12px; text-transform: uppercase; }
+        .history-item .code-snippet { color: #d4c4ff; font-family: monospace; font-size: 13px; margin: 5px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .history-item .feedback-preview { color: #c4b5fd; font-size: 13px; }
+        .history-item .date { color: #6a4a9a; font-size: 11px; float: right; }
         .history-btn {
             padding: 6px 12px;
             border: none;
@@ -192,31 +192,31 @@
             transition: 0.2s;
             flex: 1;
         }
-        .history-btn.re-review { background: #4A90D9; color: white; }
-        .history-btn.re-review:hover { background: #5a9fe9; }
+        .history-btn.re-review { background: #8B5CF6; color: white; }
+        .history-btn.re-review:hover { background: #7c3aed; }
         .history-btn.delete-btn { background: #E74C3C; color: white; }
         .history-btn.delete-btn:hover { background: #ff5a4a; }
         .btn-group { display: flex; gap: 8px; margin-top: 8px; }
 
         .flashcard-item {
-            background: rgba(10, 14, 26, 0.5);
+            background: rgba(15, 10, 26, 0.5);
             padding: 12px;
             border-radius: 8px;
             margin-bottom: 8px;
             border-left: 3px solid #34A853;
         }
-        .flashcard-item .q { color: #aac8ff; font-weight: bold; }
-        .flashcard-item .a { color: #8ab4f8; margin-top: 4px; }
+        .flashcard-item .q { color: #d4c4ff; font-weight: bold; }
+        .flashcard-item .a { color: #c4b5fd; margin-top: 4px; }
 
         .divider {
             text-align: center;
-            color: #4a6a8a;
+            color: #6a4a9a;
             font-size: 12px;
             margin: 12px 0;
-            border-top: 1px solid #1a2a4a;
+            border-top: 1px solid #2d1b69;
             padding-top: 12px;
         }
-        .divider span { background: #0a0e1a; padding: 0 10px; }
+        .divider span { background: #0f0a1a; padding: 0 10px; }
 
         /* Animation Overlay */
         .animation-overlay {
@@ -231,17 +231,17 @@
             flex-direction: column;
             z-index: 20;
             pointer-events: none;
-            background: #0a0e1a;
+            background: #0f0a1a;
         }
-        .character { font-size: 120px; line-height: 1; text-align: center; filter: drop-shadow(0 0 40px rgba(74, 144, 217, 0.5)); animation: characterSequence 6s ease-in-out forwards; }
+        .character { font-size: 120px; line-height: 1; text-align: center; filter: drop-shadow(0 0 40px rgba(139, 92, 246, 0.5)); animation: characterSequence 6s ease-in-out forwards; }
         .eyes { display: inline-block; animation: blink 1.5s ease-in-out 3; }
         @keyframes blink { 0%, 100% { transform: scaleY(1); opacity: 1; } 48% { transform: scaleY(1); opacity: 1; } 50% { transform: scaleY(0.1); opacity: 0.5; } 52% { transform: scaleY(1); opacity: 1; } }
         @keyframes characterSequence { 0% { opacity: 0; transform: scale(0.5) rotate(-10deg); } 15% { opacity: 1; transform: scale(1) rotate(0deg); } 45% { opacity: 1; transform: scale(1) rotate(0deg); } 70% { opacity: 0; transform: scale(0.8) rotate(10deg); } 100% { opacity: 0; transform: scale(0.5) rotate(20deg); display: none; } }
         .typewriter-container { position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); text-align: center; opacity: 0; animation: fadeInTypewriter 1s ease 4.5s forwards; }
         @keyframes fadeInTypewriter { 0% { opacity: 0; } 100% { opacity: 1; } }
-        .typewriter-text { font-size: 36px; font-weight: bold; color: #4A90D9; text-shadow: 0 0 20px rgba(74, 144, 217, 0.3), 0 0 60px rgba(74, 144, 217, 0.1); letter-spacing: 2px; display: inline-block; overflow: hidden; white-space: nowrap; border-right: 3px solid #4A90D9; animation: typewriter 2.5s steps(18) 1s forwards, blinkCursor 0.8s step-end 3; width: 0; }
+        .typewriter-text { font-size: 36px; font-weight: bold; color: #8B5CF6; text-shadow: 0 0 20px rgba(139, 92, 246, 0.3), 0 0 60px rgba(139, 92, 246, 0.1); letter-spacing: 2px; display: inline-block; overflow: hidden; white-space: nowrap; border-right: 3px solid #8B5CF6; animation: typewriter 2.5s steps(18) 1s forwards, blinkCursor 0.8s step-end 3; width: 0; }
         @keyframes typewriter { from { width: 0; } to { width: 100%; } }
-        @keyframes blinkCursor { 0%, 100% { border-color: #4A90D9; } 50% { border-color: transparent; } }
+        @keyframes blinkCursor { 0%, 100% { border-color: #8B5CF6; } 50% { border-color: transparent; } }
         .animation-overlay.hidden { opacity: 0; pointer-events: none; transition: opacity 0.8s ease; }
         @media (max-width: 450px) { .character { font-size: 80px; } .typewriter-text { font-size: 24px; } }
     </style>
@@ -276,7 +276,7 @@
             
             <!-- 1. CODE REVIEWER - TYPE OR UPLOAD -->
             <div class="card">
-                <strong style="color:#4A90D9;">🤖 Code Reviewer</strong>
+                <strong style="color:#8B5CF6;">🤖 Code Reviewer</strong>
                 <textarea id="codeInput" placeholder="Or type/paste your code here..."></textarea>
                 <input type="text" id="langInput" placeholder="Language (python, javascript)" value="python">
                 <button id="reviewBtn">Review Code</button>
@@ -436,7 +436,7 @@
         codeFileInput.addEventListener('change', function() {
             if (this.files && this.files[0]) {
                 codeFileName.textContent = this.files[0].name;
-                codeFileLabel.style.borderColor = '#4A90D9';
+                codeFileLabel.style.borderColor = '#8B5CF6';
             }
         });
 
@@ -612,19 +612,19 @@
                 if (res.ok) {
                     item.remove();
                     if (historyList.children.length === 0) {
-                        historyList.innerHTML = '<div style="color: #6a8db5; text-align:center; padding: 15px;">No reviews yet. Review some code!</div>';
+                        historyList.innerHTML = '<div style="color: #a78bfa; text-align:center; padding: 15px;">No reviews yet. Review some code!</div>';
                     }
                 } else { alert('Failed to delete.'); }
             } catch (err) { alert('Network error.'); }
         };
 
         async function fetchHistory() {
-            historyList.innerHTML = '<div style="color: #6a8db5; text-align:center;">Loading history...</div>';
+            historyList.innerHTML = '<div style="color: #a78bfa; text-align:center;">Loading history...</div>';
             try {
                 const res = await fetch(API + '/history', { headers: { 'Authorization': 'Bearer ' + token } });
                 const data = await res.json();
                 if (data.length === 0) {
-                    historyList.innerHTML = '<div style="color: #6a8db5; text-align:center; padding: 15px;">No reviews yet. Review some code!</div>';
+                    historyList.innerHTML = '<div style="color: #a78bfa; text-align:center; padding: 15px;">No reviews yet. Review some code!</div>';
                     return;
                 }
                 let html = '';
